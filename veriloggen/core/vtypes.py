@@ -600,8 +600,8 @@ class Reg(_Variable):
 class Wire(_Variable):
 
     def _add_subst(self, s):
-        if len(self.subst) > 0:
-            raise ValueError('Wire %s is already assigned.' % self.name)
+        # if len(self.subst) > 0:
+        #     raise ValueError('Wire %s is already assigned.' % self.name)
         self.subst.append(s)
 
 
